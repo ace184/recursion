@@ -1,0 +1,29 @@
+/* 
+Jonathan Varner
+CS 230
+Lab 4 
+Purpose: To implement an example of recursion in an OOP environment
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int f(int n){
+  
+   if (n <= 1)
+        return 1;
+   else 
+       return n*f(n-1);
+}
+int main(){
+   int num;
+   
+   cout<<"Please enter a number: ";
+   cin>>num;
+   
+   cout<<"The factorial of your number is: "<< f(num) << endl;
+   
+   return 0;
+   
+}
